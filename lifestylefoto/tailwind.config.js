@@ -5,7 +5,19 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens:{
+        'custom_width': '1800px',
+        'custom_height': { 'raw': '(min-height: 950px)' }
+      },
+    },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      display: ['group-focus'],
+      opacity: ['group-focus'],
+      inset: ['group-focus']
+    },
+  },
+  plugins: []
 }
