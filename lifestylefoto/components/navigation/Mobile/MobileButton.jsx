@@ -1,7 +1,7 @@
 
 const MobileButton = ({children}) => {
     return(
-        <li className="w-4/6 py-2 my-2 bg-white hover:bg-gray-100">
+        <li className="justify-start py-2 my-2 ml-10 tracking-widest text-white hover:text-stone-200">
             {children}
         </li>
     )
