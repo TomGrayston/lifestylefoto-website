@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       screens:{
-        'custom_width': '1800px',
-        'custom_height': { 'raw': '(min-height: 950px)' }
+        'nav_desktop': {'max': '1023px'},
+        'mini': {'max': '300px'}
       },
     },
   },

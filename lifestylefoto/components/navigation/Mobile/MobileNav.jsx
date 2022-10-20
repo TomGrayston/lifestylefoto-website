@@ -1,12 +1,20 @@
-import { GiHamburgerMenu } from 'react-icons/gi';
-import MobileMenu from './MobileMenu';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { useState } from "react";
+import { BurgerMenu } from './BurgerMenu';
 
 const MobileNav = () => {
+
+    const [open, setOpen] = useState(false);
+
+    const props = "bg-red-500"
+
     return(
-        <button className="block px-3 py-3 text-lg text-black bg-white lg:hidden focus:outline-none hover:bg-gray-200 group">
-            <GiHamburgerMenu/>
-            <MobileMenu/>
-        </button>
+        <div className='flex items-center justify-between px-2 py-1 bg-stone-100 lg:hidden'>
+            <h1 className="items-center pt-1 text-4xl text-black nav ">
+                    LifestyleFoto
+            </h1>
+            <BurgerMenu/>
+        </div>
     )
 }
 
