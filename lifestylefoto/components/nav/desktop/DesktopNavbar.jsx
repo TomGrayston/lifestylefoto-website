@@ -3,11 +3,12 @@ import NavSocialsButton from "./NavSocialsButton";
 import { CgInstagram } from 'react-icons/cg'
 import { BsYoutube } from 'react-icons/bs'
 
-const DesktopNav = () => {
-    return(
+
+const DesktopNavbar = () => {
+    return (
         <div className="container flex items-center justify-between px-2 py-2 m-auto nav_desktop:hidden">
-            <h1 className="items-center pt-1 text-4xl text-stone-100 nav ">
-                    LifestyleFoto
+            <h1 className="items-center pt-1 text-4xl cursor-pointer text-stone-100">
+                LifestyleFoto
             </h1>
             <ul className="items-center hidden text-base cursor-pointer lg:flex ">
                 <NavButton>Portfolio</NavButton>
@@ -22,4 +23,4 @@ const DesktopNav = () => {
     )
 }
 
-export default DesktopNav;
+export default DesktopNavbar;
