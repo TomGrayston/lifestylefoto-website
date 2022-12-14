@@ -1,18 +1,20 @@
-import { useState, Fragment } from "react";
+"use client"
+
+import { useState } from "react";
 import { AiOutlineMenu } from 'react-icons/ai';
 import { BsXLg as Icon }  from "react-icons/bs";
 
-export const BurgerMenu = () => {
+const BurgerMenu = () => {
 
     const [open, setOpen] = useState(false);
 
     return(
-        <Fragment>
+        <>
             <button className="block px-1 py-1 text-3xl text-black bg-inherit focus:outline-none hover:bg-gray-200 " onClick={() => setOpen(true)}>
                 <AiOutlineMenu/>
             </button>
             <Menu open={open} setOpen={setOpen}/>
-        </Fragment>
+        </>
     )
 }
 
@@ -24,7 +26,7 @@ function Menu({ open, setOpen }) {
                     <Icon/>
                 </button>
             </div>
-            <ul className="flex flex-col w-full text-2xl text-white cursor-pointer bg-inherit nav place-items-start">
+            <ul className="flex flex-col w-full text-2xl text-white cursor-pointer bg-inherit place-items-start">
                 <MobileButton>Portfolio »</MobileButton>
                 <MobileButton>Pricing »</MobileButton>
                 <MobileButton>Testimonials »</MobileButton>
@@ -42,3 +44,5 @@ function MobileButton({children}) {
         </li>
     )
 }
+
+export default BurgerMenu;
