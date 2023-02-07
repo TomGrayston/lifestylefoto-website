@@ -1,4 +1,4 @@
-import DesktopNavbar from './desktop/DesktopNavbar';
+import DesktopNavbar from './web/DesktopNavbar';
 import MobileNavbar from './mobile/MobileNavbar';
 
 
