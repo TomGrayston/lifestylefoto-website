@@ -8,7 +8,7 @@ export default function HomePage() {
                     src="/background.webp"
                     alt="Newly married couple dancing"
                     fill
-                    className='object-cover w-full h-full' />
+                    className='object-cover w-full h-full ' />
                 <h1 className="text-white absolute text-[4rem] mini:text-[3rem] sm:text-[7rem] md:text-[9rem] lg:text-[12rem] font-sans">
                     LifestyleFoto
                 </h1>

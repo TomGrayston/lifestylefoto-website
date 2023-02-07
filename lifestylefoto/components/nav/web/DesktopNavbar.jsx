@@ -6,7 +6,7 @@ import { BsYoutube } from 'react-icons/bs'
 
 const DesktopNavbar = () => {
     return (
-        <div className="container flex items-center justify-between px-2 py-2 m-auto nav_desktop:hidden">
+        <div className="container absolute top-0 left-0 right-0 z-10 flex items-center justify-between px-2 py-2 m-auto nav_desktop:hidden">
             <h1 className="items-center pt-1 text-4xl cursor-pointer text-stone-100">
                 LifestyleFoto
             </h1>
