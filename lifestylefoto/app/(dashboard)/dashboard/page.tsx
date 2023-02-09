@@ -1,5 +1,5 @@
-import LoginMobile from "../../../components/login/mobile/loginMobile";
-import LoginWeb from "../../../components/login/web/loginWeb";
+import LoginMobile from "../../../components/login/mobile/LoginMobile";
+import LoginWeb from "../../../components/login/web/LoginWeb";
 
 export default function Dashboard() {
     return (

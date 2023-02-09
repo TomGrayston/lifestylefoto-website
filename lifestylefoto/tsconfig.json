@@ -29,7 +29,7 @@
         "**/*.ts",
         "**/*.tsx",
         ".next/types/**/*.ts"
-, "components/nav/web/NavButton.jsx", "components/login/mobile/loginMobile.jsx", "components/login/web/loginWeb.jsx"    ],
+, "components/nav/web/NavButton.jsx", "components/login/mobile/LoginMobile.jsx", "components/login/web/LoginWeb.jsx"    ],
     "exclude": [
         "node_modules"
     ]
