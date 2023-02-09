@@ -1,3 +1,4 @@
+import '../../../styles/globals.css';
 import { Bebas_Neue } from '@next/font/google';
 
 const bebas = Bebas_Neue({
@@ -6,7 +7,7 @@ const bebas = Bebas_Neue({
   variable: '--font-bebas-neue',
 })
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children } : { children: React.ReactNode }) {
   return (
     <html lang='en' className={`${bebas.variable}`}>
       <head />
