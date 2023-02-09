@@ -7,7 +7,7 @@ const LoginMobile = () => {
             <form className="flex flex-col items-center justify-center w-full my-auto">
 
                 <label className="flex justify-center w-2/3 py-10 font-sans text-5xl text-center text-black">
-                    LIFESTYLE LOGIN
+                    LIFESTYLEFOTO LOGIN
                 </label>
 
                 <LoginInput placeholder="Email address" type="text"/>
