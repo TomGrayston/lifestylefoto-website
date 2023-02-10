@@ -1,13 +1,13 @@
 "use client"
 
-import LoginMobile from "../../../components/login/mobile/LoginMobile";
-import LoginWeb from "../../../components/login/web/LoginWeb";
+import LoginMobile from "../../../components/login/mobile/loginMobile";
+import LoginWeb from "../../../components/login/web/loginWeb";
 
-import { initFirebase } from "../../../firebase/firebase"
+import { initFirebase } from "../../../firebase/firebase";
 
 export default function Login() {
-    
-    initFirebase()
+
+    const app = initFirebase();
 
     return (
         <>

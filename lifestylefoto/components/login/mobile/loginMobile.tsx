@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { useState } from "react";
 
 const LoginMobile = () => {
-    
+
     const router = useRouter();
     const [data, setData] = useState({
         email: '',
@@ -18,22 +18,21 @@ const LoginMobile = () => {
     const handleLogin = () => {
         signInWithEmailAndPassword(auth, data.email, data.pwd)
             .then((userCredential) => {
-                // Signed in 
+                // Signed in
                 const user = userCredential.user;
-                router.push('/dashboard')
+                router.push('/dashboard');
             })
             .catch((error) => {
-                console.log(auth);
                 const errorCode = error.code;
                 const errorMessage = error.message;
 
-                alert(error);
+                alert("Wrong Details");
             });
     }
 
     return(
         <div className="top-0 left-0 right-0 flex justify-center h-screen pb-44 lg:hidden">
-            <form className="flex flex-col items-center justify-center w-full my-auto">
+            <div className="flex flex-col items-center justify-center w-full my-auto">
 
                 <label className="flex justify-center w-2/3 py-10 font-sans text-5xl text-center text-black">
                     LIFESTYLEFOTO LOGIN yes
@@ -45,7 +44,7 @@ const LoginMobile = () => {
                 <Button onClick={handleLogin}>
                     Sign In
                 </Button>
-            </form>
+            </div>
         </div>
     )
 }

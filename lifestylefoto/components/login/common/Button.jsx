@@ -1,5 +1,3 @@
-"use client"
-
 const Button = ({children, ...props}) => {
     return(
         <button
