@@ -5,7 +5,7 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-const LoginMobile = () => {
+const LoginWeb = () => {
     const router = useRouter();
     const [data, setData] = useState({
         email: "",
@@ -30,8 +30,8 @@ const LoginMobile = () => {
     };
 
     return (
-        <div className="top-0 left-0 right-0 flex justify-center h-screen pb-44 lg:hidden">
-            <div className="flex flex-col items-center justify-center w-full my-auto">
+        <div className="top-0 left-0 right-0 flex justify-center h-screen pb-44 nav_desktop:hidden">
+            <div className="flex flex-col items-center justify-center w-1/2 my-auto 2xl:w-1/4">
                 <label className="flex justify-center w-2/3 py-10 font-sans text-5xl text-center text-black">
                     LIFESTYLEFOTO LOGIN
                 </label>
@@ -55,4 +55,4 @@ const LoginMobile = () => {
     );
 };
 
-export default LoginMobile;
+export default LoginWeb;
