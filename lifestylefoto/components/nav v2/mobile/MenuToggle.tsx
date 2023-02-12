@@ -7,11 +7,10 @@ import { ReactNode, useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 
 interface Props {
-    children?: ReactNode,
-    menuOptionsFont?: string
+    children?: ReactNode
 }
 
-const MenuToggle = ({children, menuOptionsFont}: Props) => {
+const MenuToggle = ({children}: Props) => {
 
     const [open, setOpen] = useState(false);
 
@@ -21,9 +20,7 @@ const MenuToggle = ({children, menuOptionsFont}: Props) => {
                 <AiOutlineMenu/>
             </IconButton>
             <Menu open={open} setOpen={setOpen}>
-                <MenuOptions font={menuOptionsFont}>
-                    {children}
-                </MenuOptions>
+                {children}
             </Menu>
         </>
     )
