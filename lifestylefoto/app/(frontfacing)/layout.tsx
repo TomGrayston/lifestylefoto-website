@@ -2,15 +2,15 @@ import '../../styles/globals.css';
 
 import { ReactNode } from 'react';
 
-import NavbarMobile from '../../components/nav v2/mobile/NavbarMobile';
-import NavbarWeb from '../../components/nav v2/web/NavbarWeb';
-import NavbarOptions from '../../components/nav v2/web/NavbarOptions';
-import NavbarTitle from '../../components/nav v2/common/NavbarTitle';
-import NavbarButton from '../../components/nav v2/web/NavbarButton';
-import NavbarSocialButton from '../../components/nav v2/web/NavbarSocialButton';
-import MenuToggle from '../../components/nav v2/mobile/MenuToggle';
-import MenuOptions from '../../components/nav v2/common/MenuOptions';
-import MenuButton from '../../components/nav v2/common/MenuButton';
+import NavbarMobile from '../../components/nav/mobile/NavbarMobile';
+import NavbarWeb from '../../components/nav/web/NavbarWeb';
+import NavbarOptions from '../../components/nav/web/NavbarOptions';
+import NavbarTitle from '../../components/nav/common/NavbarTitle';
+import NavbarButton from '../../components/nav/web/NavbarButton';
+import NavbarSocialButton from '../../components/nav/web/NavbarSocialButton';
+import MenuToggle from '../../components/nav/mobile/MenuToggle';
+import MenuOptions from '../../components/nav/common/MenuOptions';
+import MenuButton from '../../components/nav/common/MenuButton';
 
 import { Bebas_Neue } from '@next/font/google';
 import { CgInstagram } from 'react-icons/cg';
@@ -58,8 +58,8 @@ export default function RootLayout({children}: Props) {
             <NavbarButton>Testimonials</NavbarButton>
             <NavbarButton>About Me</NavbarButton>
             <NavbarButton>Contact Me</NavbarButton>
-            <NavbarSocialButton><CgInstagram/></NavbarSocialButton>
-            <NavbarSocialButton><BsYoutube/></NavbarSocialButton>
+            <NavbarSocialButton hoverColour='hover:text-rose-500'><CgInstagram/></NavbarSocialButton>
+            <NavbarSocialButton hoverColour='hover:text-red-500'><BsYoutube/></NavbarSocialButton>
           </NavbarOptions>
         </NavbarWeb>
 
