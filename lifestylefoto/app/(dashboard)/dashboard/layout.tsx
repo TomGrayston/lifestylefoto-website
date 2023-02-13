@@ -1,8 +1,10 @@
 import '../../../styles/globals.css';
 import { ReactNode } from 'react';
-import NavbarMobile from '../../../components/nav v2/mobile/NavbarMobile';
-import MenuToggle from '../../../components/nav v2/mobile/MenuToggle';
-import MenuButton from '../../../components/nav v2/common/MenuButton';
+import NavbarMobile from '../../../components/nav/mobile/NavbarMobile';
+import MenuToggle from '../../../components/nav/mobile/MenuToggle';
+import MenuButton from '../../../components/nav/common/MenuButton';
+import NavbarTitle from '../../../components/nav/common/NavbarTitle';
+import MenuOptions from '../../../components/nav/common/MenuOptions';
 import { Bebas_Neue } from '@next/font/google';
 
 
@@ -21,15 +23,19 @@ export default function RootLayout({ children } : Props) {
     <html lang='en' className={`${bebas.variable}`}>
       <head />
       <body>
+
         <NavbarMobile>
-          <h1 className="items-center pt-1 font-sans text-4xl text-black ">
+          <NavbarTitle font="font-sans">
             Dashboard
-          </h1>
+          </NavbarTitle>
           <MenuToggle>
-            <MenuButton>Posts</MenuButton>
-            <MenuButton>Collections</MenuButton>
+            <MenuOptions font="font-sans">
+              <MenuButton>Posts</MenuButton>
+              <MenuButton>Collections</MenuButton>
+            </MenuOptions>
           </MenuToggle>
         </NavbarMobile>
+
         <main>
           {children}
         </main>
