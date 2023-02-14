@@ -28,7 +28,7 @@ export default function RootLayout({ children } : Props) {
           <NavbarTitle font="font-sans">
             Dashboard
           </NavbarTitle>
-          <MenuToggle>
+          <MenuToggle bgColour='bg-stone-100' textColour='text-black'>
             <MenuOptions font="font-sans">
               <MenuButton>Posts</MenuButton>
               <MenuButton>Collections</MenuButton>

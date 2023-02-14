@@ -37,7 +37,7 @@ export default function RootLayout({children}: Props) {
           <NavbarTitle font="font-sans">
             Lifestylefoto
           </NavbarTitle>
-          <MenuToggle>
+          <MenuToggle bgColour='bg-black' textColour='text-white'>
             <MenuOptions font='font-sans'>
               <MenuButton>Portfolio »</MenuButton>
               <MenuButton>Pricing »</MenuButton>
