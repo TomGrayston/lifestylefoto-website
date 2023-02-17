@@ -1,12 +1,13 @@
 interface Props {
-    children?: string,
+    children: string,
     font?: string,
-    colour?: string
+    colour?: string,
+    extendStyles?: string
 }
 
-const NavbarTitle = ({children, font, colour}: Props) => {
+const NavbarTitle = ({children, font, colour, extendStyles}: Props) => {
     return(
-        <h1 className={`items-center pt-1 text-4xl ${font} ${colour}`}>
+        <h1 className={`items-center text-4xl top-0 left-0 right-0 ${font} ${colour} ${extendStyles}`}>
             {children}
         </h1>
     );

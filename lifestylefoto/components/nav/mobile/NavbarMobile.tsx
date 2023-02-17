@@ -6,7 +6,7 @@ interface Props {
 
 const NavbarMobile = ({children} : Props) => {
     return(
-        <div className='fixed top-0 left-0 right-0 z-10 flex items-center justify-between px-2 py-1 bg-stone-100 lg:hidden '>
+        <div className='fixed z-10 flex items-center justify-between w-full px-2 py-1 shadow-lg bg-stone-100 lg:hidden'>
             {children}
         </div>
     );
