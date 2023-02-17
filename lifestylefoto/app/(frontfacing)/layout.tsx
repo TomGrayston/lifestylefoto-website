@@ -14,7 +14,8 @@ import MenuButton from '../../components/nav/common/MenuButton';
 
 import { Bebas_Neue } from '@next/font/google';
 import { CgInstagram } from 'react-icons/cg';
-import { BsYoutube } from 'react-icons/bs';
+import { BsXLg, BsYoutube } from 'react-icons/bs';
+import { AiOutlineMenu } from 'react-icons/ai';
 
 const bebas = Bebas_Neue({
   subsets: ['latin'],
@@ -34,10 +35,10 @@ export default function RootLayout({children}: Props) {
       <body>
 
         <NavbarMobile>
-          <NavbarTitle font="font-sans">
+          <NavbarTitle font="font-sans" colour="text-black">
             Lifestylefoto
           </NavbarTitle>
-          <MenuToggle bgColour='bg-black' textColour='text-white'>
+          <MenuToggle bgColour='bg-black' textColour='text-white' icon={<AiOutlineMenu/>} menuIcon={<BsXLg/>}>
             <MenuOptions font='font-sans'>
               <MenuButton>Portfolio »</MenuButton>
               <MenuButton>Pricing »</MenuButton>

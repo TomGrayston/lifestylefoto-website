@@ -1,11 +1,16 @@
 import '../../../styles/globals.css';
+
 import { ReactNode } from 'react';
+
 import NavbarMobile from '../../../components/nav/mobile/NavbarMobile';
 import MenuToggle from '../../../components/nav/mobile/MenuToggle';
 import MenuButton from '../../../components/nav/common/MenuButton';
 import NavbarTitle from '../../../components/nav/common/NavbarTitle';
 import MenuOptions from '../../../components/nav/common/MenuOptions';
+import NavbarWeb from '../../../components/nav/web/NavbarWeb';
+
 import { Bebas_Neue } from '@next/font/google';
+import { AiOutlineMenu, AiOutlineMenuFold, AiOutlineMenuUnfold} from "react-icons/ai";
 
 
 const bebas = Bebas_Neue({
@@ -25,16 +30,28 @@ export default function RootLayout({ children } : Props) {
       <body>
 
         <NavbarMobile>
-          <NavbarTitle font="font-sans">
-            Dashboard
-          </NavbarTitle>
-          <MenuToggle bgColour='bg-stone-100' textColour='text-black'>
+          <MenuToggle bgColour='bg-stone-100' textColour='text-black' menuIcon={<AiOutlineMenuFold/>} icon={<AiOutlineMenuUnfold/>}>
             <MenuOptions font="font-sans">
               <MenuButton>Posts</MenuButton>
               <MenuButton>Collections</MenuButton>
             </MenuOptions>
           </MenuToggle>
+          <NavbarTitle font="font-sans">
+            Lifestylefoto Dashboard
+          </NavbarTitle>
         </NavbarMobile>
+
+        <NavbarWeb bgColour='bg-stone-100' extendStyles='shadow-lg'>
+          <MenuToggle bgColour='bg-stone-100' textColour='text-black' menuIcon={<AiOutlineMenuFold/>} icon={<AiOutlineMenuUnfold/>} extendStyles="w-1/6">
+            <MenuOptions font="font-sans">
+              <MenuButton>Posts</MenuButton>
+              <MenuButton>Collections</MenuButton>
+            </MenuOptions>
+          </MenuToggle>
+          <NavbarTitle font="font-sans" colour='text-black'>
+            Lifestylefoto Dashboard
+          </NavbarTitle>
+        </NavbarWeb>
 
         <main>
           {children}
