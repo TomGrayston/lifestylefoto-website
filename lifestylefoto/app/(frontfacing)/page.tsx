@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function HomePage() {
     return (
         <>
-            <div className='flex items-center justify-center h-screen'>
+            <div className='flex items-center justify-center w-full h-screen'>
                 <Image
                     src="/background.webp"
                     alt="Newly married couple dancing"
