@@ -1,33 +1,14 @@
 import Button from "../common/Button";
 import LoginInput from "../common/LoginInput";
+import { SetState, LoginDetails } from "../types/types";
 
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
+type Props = {
+    handleLogin: () => void,
+    data: LoginDetails,
+    setData: SetState<LoginDetails>
+}
 
-const LoginMobile = () => {
-    const router = useRouter();
-    const [data, setData] = useState({
-        email: "",
-        pwd: "",
-    });
-
-    const auth = getAuth();
-
-    const handleLogin = () => {
-        signInWithEmailAndPassword(auth, data.email, data.pwd)
-            .then((userCredential) => {
-                // Signed in
-                const user = userCredential.user;
-                router.push("/dashboard");
-            })
-            .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-
-                alert("Wrong Details");
-            });
-    };
+const LoginMobile: React.FC<Props> = ({handleLogin, data, setData}) => {
 
     return (
         <div className="top-0 left-0 right-0 flex justify-center h-screen pb-44 lg:hidden">
