@@ -10,7 +10,7 @@ import MenuOptions from '../../../components/nav/common/MenuOptions';
 import NavbarWeb from '../../../components/nav/web/NavbarWeb';
 
 import { Bebas_Neue } from '@next/font/google';
-import { AiOutlineMenu, AiOutlineMenuFold, AiOutlineMenuUnfold} from "react-icons/ai";
+import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 
 
 const bebas = Bebas_Neue({
