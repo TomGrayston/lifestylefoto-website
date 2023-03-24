@@ -1,6 +1,7 @@
 import Button from "../common/Button";
 import LoginInput from "../common/LoginInput";
-import { SetState, LoginDetails } from "../types/types";
+import { LoginDetails } from "../types/types";
+import { SetState } from "../../../types/types";
 
 type Props = {
     handleLogin: () => void,
