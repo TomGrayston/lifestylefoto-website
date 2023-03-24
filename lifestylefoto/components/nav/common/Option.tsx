@@ -4,7 +4,7 @@ interface Props {
     children?: ReactNode,
 }
 
-const MenuButton = ({children}: Props) => {
+const Option = ({children}: Props) => {
     return(
         <li className={`justify-start py-2 my-2 ml-10 tracking-widest`}>
             {children}
@@ -12,4 +12,4 @@ const MenuButton = ({children}: Props) => {
     );
 }
 
-export default MenuButton;
+export default Option;

@@ -1,4 +1,11 @@
-const MenuOptions = ({children, font}) => {
+import { ReactNode } from "react";
+
+type Props = {
+    children: ReactNode,
+    font: string
+}
+
+const Options = ({children, font}: Props) => {
     return(
         <ul className={`flex flex-col w-full text-2xl text-white cursor-pointer bg-inherit place-items-start ${font} bg-inherit text-inherit`}>
             {children}
@@ -6,4 +13,4 @@ const MenuOptions = ({children, font}) => {
     );
 }
 
-export default MenuOptions;
+export default Options;
